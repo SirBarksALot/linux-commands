@@ -1,4 +1,5 @@
 iptables -D INPUT -s <ipaddress> -j ACCEPT        # delete <ipaddress> from whitelist
+iptables -I INPUT 1 -s <ipaddress> -j ACCEPT      # insert ipaddress rule to first row
 iptables -L -n -v                                 # list
 service iptables save                             # save needed when using iptables
 service iptables restart                          # restart needed when chaning file
