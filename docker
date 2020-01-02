@@ -1,2 +1,3 @@
 docker build -t IMAGE_NAME:TAG .            # build image named IMAGE_NAME and tag it with TAG from ./Dockerfile
 docker run -p 80:8000 -d IMAGE_NAME:TAG     # run image IMAGE_NAME:TAG detached and map port 80 on host to 8000 in a container
+docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
