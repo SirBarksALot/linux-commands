@@ -3,5 +3,9 @@ iptables -I INPUT 1 -s <ipaddress> -j ACCEPT      # insert ipaddress rule to fir
 iptables -L -n -v                                 # list
 service iptables save                             # save needed when using iptables
 service iptables restart                          # restart needed when chaning file
+
 find . -type d -name "apt"                        # find directory named apt starting from current (.) location
 grep -rnw '/path/to/somewhere/' -e 'pattern'      # grep all files containing pattern string in provided path recursively
+
+ssh-keygen                                        # generate key pair
+ssh-copy-id -i ~/.ssh/mykey user@host             # copy public key associated with provided private key to target host as a user
