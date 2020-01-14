@@ -1,0 +1,2 @@
+find . -type d -name "apt"                        # find directory named apt starting from current (.) location
+grep -rnw '/path/to/somewhere/' -e 'pattern'      # grep all files containing pattern string in provided path recursively
