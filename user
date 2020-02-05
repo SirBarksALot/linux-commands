@@ -1,0 +1,5 @@
+adduser <username>                      # create user
+passwd <username>                       # change username password
+usermod -aG [wheel, sudo] <username>    # add user to sudoers
+visudo                                  # admin settings (no pass, etc.)
+cat /etc/passwd                         # list users
