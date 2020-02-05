@@ -1,2 +1,2 @@
-chmod -R 777 ./* ./.[!.]*  # chmod on all files in the current directory, recursively, including hidden files
-chown -R root:phil ./*  # change owner to root and group to phil, all files in current directory without hidden files,recursively
+chmod -R 777 ./* ./.[!.]*   # chmod on all files in the current directory, recursively, including hidden files
+chown -R root:phil ./*      # change owner to root and group to phil, all files in current directory without hidden files,recursively
