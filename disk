@@ -1,0 +1,2 @@
+du . -sh
+ncdu          # if applicable
